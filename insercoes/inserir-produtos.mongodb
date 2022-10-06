@@ -1,3 +1,4 @@
+use("loja")
 db.produtos.insertOne({
     marca: "Motorola",
     modelo: "Moto G7",

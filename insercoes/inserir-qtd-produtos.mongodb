@@ -1,4 +1,5 @@
-db.produtos.update({
+use("loja")
+db.produtos.updateOne({
     modelo: "Moto G7"
 }, {
     $set: {
@@ -6,7 +7,7 @@ db.produtos.update({
     }
 })
 
-db.produtos.update({
+db.produtos.updateOne({
     modelo: "iPhone 8"
 }, {
     $set: {
@@ -14,7 +15,7 @@ db.produtos.update({
     }
 })
 
-db.produtos.update({
+db.produtos.updateOne({
     modelo: "Galaxy Note 10"
 }, {
     $set: {
@@ -22,7 +23,7 @@ db.produtos.update({
     }
 })
 
-db.produtos.update({
+db.produtos.updateOne({
     modelo: "Redmi Go"
 }, {
     $set: {

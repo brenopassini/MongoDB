@@ -1,6 +1,6 @@
 use("loja")
 
-db.produtos.insertOne({
+/*db.produtos.insertOne({
     marca: "Apple",
     modelo: "Iphone 11",
     descricao: "O celular mais novo da apple com duas",
@@ -8,4 +8,26 @@ db.produtos.insertOne({
     memoria: "128GB",
     chips: 1,
     preco: NumberDecimal("4999.99")
+})
+
+db.clientes.insertOne({
+    nome: "Breno Augusto",
+    endereco: "Rua dos testes, 910",
+    email: "brenopassini@gmail.com",
+    senha: "123456"
+})
+
+db.clientes.insertOne({
+    nome: "Ricardo",
+    endereco: "Rua nenhum, 1000",
+    email: "ricardo@example.com",
+    senha: "654321"
+})*/
+
+db.produtos.update({
+    modelo: "iPhone 11"
+}, {
+    $set: {
+        quantidade: 7
+    }
 })
